@@ -153,6 +153,7 @@ More info: https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/vboxman
 - Disable mouse integration
 - Set correct resolution
 - Install ZeroTier (check if this is necessary on guest or on host machine)
+- Install required software for Vagrant box to work: http://kamalim.github.io/blogs/how-to-create-you-own-vagrant-base-boxes/ 
 - Turn off your virtual machine once you're satisfied with it
 
 # Upload the box to Vagrant
