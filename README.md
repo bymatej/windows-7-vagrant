@@ -203,3 +203,7 @@ sudo modprobe vboxdrv
 
 Solution:
 - https://askubuntu.com/questions/1322875/virtualbox-installation-problem-on-ubuntu-20-10
+
+# Resources
+- https://github.com/jeffskinnerbox/Windows-10-Vagrant-Box
+- 
