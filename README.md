@@ -185,6 +185,7 @@ More details:
 - https://www.vagrantup.com/docs/providers/virtualbox/boxes
 - https://www.vagrantup.com/docs/cli/upload
 - https://mudongliang.github.io/2018/06/25/create-vagrant-base-box.html
+- http://kamalim.github.io/blogs/how-to-create-you-own-vagrant-base-boxes/
 
 # Troubleshooting
 
