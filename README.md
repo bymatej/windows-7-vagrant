@@ -213,4 +213,5 @@ Solution:
 
 # Resources
 - https://github.com/jeffskinnerbox/Windows-10-Vagrant-Box
+- https://github.com/bymatej/windows-server-vagrant
 - 
