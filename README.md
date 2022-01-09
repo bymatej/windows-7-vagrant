@@ -151,8 +151,39 @@ More info: https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/vboxman
 ## Post installation stuff
 - Install guest additions in the Guest OS
 - Disable mouse integration
-- 
+- Set correct resolution
+- Install ZeroTier (check if this is necessary on guest or on host machine)
+- Turn off your virtual machine once you're satisfied with it
 
+# Upload the box to Vagrant
+## List all VMs and found which one is yours
+```
+vboxmanage list vms
+```
+
+The result should be something like this:
+```
+"Windows 7" {866aade4-e0a0-4f2e-be64-bdd52e485b9a}
+```
+
+## Create a box
+```
+vagrant package --base "Windows 7"
+```
+
+This will generate a `.box` file.
+
+## Upload the box file to Vagrant
+- Register to Vagrant
+- Create a box in their user interface
+- Create a version
+- Set the provider (virtualbox in my case)
+- Fill the upload form
+
+More details: 
+- https://www.vagrantup.com/docs/providers/virtualbox/boxes
+- https://www.vagrantup.com/docs/cli/upload
+- https://mudongliang.github.io/2018/06/25/create-vagrant-base-box.html
 
 # Troubleshooting
 
