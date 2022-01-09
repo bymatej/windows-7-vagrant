@@ -146,4 +146,27 @@ Guest:
 
 Configured memory balloon size: 0MB
 ```
+More info: https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/vboxmanage-showvminfo.html
 
+## Post installation stuff
+- Install guest additions in the Guest OS
+- Disable mouse integration
+- 
+
+
+# Troubleshooting
+
+## Issues on `vagrant up` with virtualbox provider
+In case of vagrant-up issue that says "If your system is using EFI Secure Boot you may need to sign the kernel modules (vboxdrv, vboxnetflt, vboxnetadp, vboxpci) before you can load them.", do the following:
+- Disable Secure Boot in BIOS (OPTIONAL)
+- Execute the following 2 commands: 
+```
+sudo apt install virtualbox-dkms --reinstall
+```
+
+```
+sudo modprobe vboxdrv
+```
+
+Solution:
+- https://askubuntu.com/questions/1322875/virtualbox-installation-problem-on-ubuntu-20-10
