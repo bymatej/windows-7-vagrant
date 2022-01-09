@@ -24,7 +24,8 @@ vagrant plugin install vagrant-vbguest
 
 ## Creating a virtual machine
 - Download Windows 7 iso
-- Creating the virtual machine in virtualbox
+- Creating the virtual machine in virtualbox (see details below)
+- Go through the OS installation stuff
 - Install required software (games, browsers, libraires, etc)
 - Install guest additions
 
@@ -144,6 +145,5 @@ Capture options:             vc_enabled=true,ac_enabled=false,ac_profile=med
 Guest:
 
 Configured memory balloon size: 0MB
-
-
 ```
+
