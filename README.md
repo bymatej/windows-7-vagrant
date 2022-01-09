@@ -22,9 +22,18 @@ vagrant plugin install vagrant-disksize
 vagrant plugin install vagrant-vbguest
 ```
 
+```
+gem install vagrant-windows
+```
+
+```
+gem install winrm
+```
+
 ## Creating a virtual machine
 - Download Windows 7 iso
 - Creating the virtual machine in virtualbox (see details below)
+  - Make sure you enable network type as NAT
 - Go through the OS installation stuff
 - Install required software (games, browsers, libraires, etc)
 - Install guest additions
@@ -154,7 +163,36 @@ More info: https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/vboxman
 - Set correct resolution
 - Install ZeroTier (check if this is necessary on guest or on host machine)
 - Install required software for Vagrant box to work: http://kamalim.github.io/blogs/how-to-create-you-own-vagrant-base-boxes/ 
-- Turn off your virtual machine once you're satisfied with it
+
+Required software to install (via CMD in Windows guest OS):
+- winrm
+```
+winrm quickconfig -q
+```
+
+```
+winrm set winrm/config/winrs @{MaxMemoryPerShellMB="512"}
+```
+
+```
+winrm set winrm/config @{MaxTimeoutms="1800000"}
+```
+
+```
+winrm set winrm/config/service @{AllowUnencrypted="true"}
+```
+
+```
+winrm set winrm/config/service/auth @{Basic="true"}
+```
+
+Disable the following services:
+- `UAC` (type UAC in windows explorer)
+- `Complex passwords` (from explorere: gpedit.msc; Computer Configuration >windows settings >security settings > Password Policy > Password Must Meet Complexity Requirement > Disabled)
+
+Create a local admin account with username/password as vagrant/vagrant (set password to not expire and uncheck must change at next login).
+
+Turn off your virtual machine once you're satisfied with it
 
 # Upload the box to Vagrant
 ## List all VMs and found which one is yours
