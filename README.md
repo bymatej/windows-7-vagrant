@@ -178,8 +178,10 @@ This will generate a `package.box` file.
 - https://www.a2hosting.com/kb/developer-corner/linux/working-with-file-checksums 
 
 ```
-tbd
+sha512sum package.box
 ```
+
+Hash will be in the output. Copy it.
 
 ## Upload the box file to Vagrant
 - Register to Vagrant
