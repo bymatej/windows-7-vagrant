@@ -174,6 +174,13 @@ vagrant package --base "Windows 7"
 
 This will generate a `.box` file.
 
+## Generate SHA hash for your box file
+- https://www.a2hosting.com/kb/developer-corner/linux/working-with-file-checksums 
+
+```
+tbd
+```
+
 ## Upload the box file to Vagrant
 - Register to Vagrant
 - Create a box in their user interface
