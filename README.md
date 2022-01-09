@@ -221,7 +221,7 @@ This will generate a `windows7.box` file.
 - https://www.a2hosting.com/kb/developer-corner/linux/working-with-file-checksums 
 
 ```
-sha512sum package.box
+sha512sum windows7.box
 ```
 
 Hash will be in the output. Copy it.
