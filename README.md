@@ -172,7 +172,7 @@ The result should be something like this:
 vagrant package --base "Windows 7"
 ```
 
-This will generate a `.box` file.
+This will generate a `package.box` file.
 
 ## Generate SHA hash for your box file
 - https://www.a2hosting.com/kb/developer-corner/linux/working-with-file-checksums 
