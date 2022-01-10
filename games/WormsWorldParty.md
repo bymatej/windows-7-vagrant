@@ -34,9 +34,24 @@ sudo zerotier join network_id_provided_by_matej
 ```
 \* Note: replace the  `network_id_provided_by_matej` with the actuall network ID.
 
-## Vagrant setup
-Vagrant is the service which will obtain the virtual machine that has the game in it.
+## 2. Vagrant & VirtualBox installation
+Vagrant is the service which will obtain the virtual machine that has the game in it. VirtualBox will be our provider that actually runs the virtual machine.
+
+- Install VirtualBox by executing the following commands:  
+```
+sudo apt -y install virtualbox
+```
 
 - Install Vagrant by executing the following commands:  
 ```
+sudo apt -y install vagrant
+```
+
+## 3. Running the VM using Vagrant
+We need to create a Vagrantfile and spin up the box. I will give the examples on where you can create the Vagrantfile. You can do it in any path.  
+Open your terminal and create a Vagrantfile (assuming you have `nano` installed). Execute the following commands: 
+```
+mkdir -p ~/games/windows/ && \
+cd ~/games/windows/ && \ 
+nano Vagrantfile
 ```
