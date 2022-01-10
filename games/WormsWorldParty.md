@@ -30,5 +30,5 @@ curl -s https://install.zerotier.com | sudo bash
 ```
 sudo zerotier join network_id_provided_by_matej
 ```
-* Note: replace the  `network_id_provided_by_matej` with the actuall network ID.
+\* Note: replace the  `network_id_provided_by_matej` with the actuall network ID.
 
