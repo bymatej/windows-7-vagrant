@@ -193,6 +193,12 @@ Disable the following services:
 - `UAC` (this is "User Account Control" - type UAC in windows explorer (start search), or disable it when it prompts by sliding it down to "Never notify")
 - `Complex passwords` (from start menu search: gpedit.msc; Computer Configuration > windows settings > security settings > Password Policy > Password Must Meet Complexity Requirement > Disabled) (you will not have this option if this is not a domain computer)
 
+Remove all unnecessary files and installations, perform a Disk Cleanup, and Disk defragment. 
+
+Download SDelete and fill the blank disk space with zeroes: 
+- SDelete: https://docs.microsoft.com/en-us/sysinternals/downloads/sdelete 
+- in cmd perform `sdelete C: -z`
+
 Turn off your virtual machine once you're satisfied with it
 
 # Upload the box to Vagrant
