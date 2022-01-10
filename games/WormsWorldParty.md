@@ -52,6 +52,30 @@ We need to create a Vagrantfile and spin up the box. I will give the examples on
 Open your terminal and create a Vagrantfile (assuming you have `nano` installed). Execute the following commands: 
 ```
 mkdir -p ~/games/windows/ && \
-cd ~/games/windows/ && \ 
+cd ~/games/windows/ && \
 nano Vagrantfile
 ```
+
+The `nano` editor will be opened. Simply paste this text using `Ctrl + Shift + v`:  
+```
+Vagrant.configure("2") do |config|
+  config.vm.box = "bymatej/windows-7-with-games"
+  config.vm.box_version = "0.0.1"
+end
+```
+
+Then hit `Ctrl + s` and then `Ctrl + x`. This will save the file content and exit the `nano` editor.  
+
+Then execute this command to spin up the Virtual Machine:  
+```
+vagrant up
+```
+
+This will take up to 20 minutes (depending on your internet speed). After your VM is up and running, open your VirtualBox application and double click on your Windows 7 machine to see the GUI.
+
+
+## 4. Running the game
+In virtual machine, on the Desktop, you'll see the `instructions_and_tips_wwp.txt` file. Read it first.  
+Then, open the `WormsWorldParty` directory, find the `wwp.exe` file and double-click on it. Wait for about 10 seconds and the game should start.
+
+If your mouse is too fast in the game, disable the "mouse integration" in VirtualBox. Go to Input and click on Mouse integration to disable it.
