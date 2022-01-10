@@ -8,7 +8,7 @@ ZeroTier is the software that we use to simulate a LAN network. It's a kind-of-a
 
 ## 2. Game setup
 - Download the game
-  - Main link: 
+  - Main link: https://drive.google.com/file/d/1stDiiKgR8-j3Xdo0Xp2l7DhiMC2LgRti/view?usp=sharing
   - Mirror: https://private-downloads.bymatej.com/games/WormsWorldParty/WormsWorldParty.zip
 - Extract the zip and go to `WWP` directory
 - Read the `instructions_and_tips_wwp.txt` file
