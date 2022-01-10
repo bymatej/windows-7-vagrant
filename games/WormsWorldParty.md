@@ -18,6 +18,8 @@ ZeroTier is the software that we use to simulate a LAN network. It's a kind-of-a
 - Double-click on the `wwp.exe` and wait for a while
 - The game should start
 
+-----
+
 # Linux (Ubuntu 20.04)
 ## 1. ZeroTier setup
 ZeroTier is the software that we use to simulate a LAN network. It's a kind-of-a VPN where one creates a network and others simply connect to it.  
@@ -32,3 +34,9 @@ sudo zerotier join network_id_provided_by_matej
 ```
 \* Note: replace the  `network_id_provided_by_matej` with the actuall network ID.
 
+## Vagrant setup
+Vagrant is the service which will obtain the virtual machine that has the game in it.
+
+- Install Vagrant by executing the following commands:  
+```
+```
